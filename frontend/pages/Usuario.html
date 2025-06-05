@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAICE - Perfil Usuario</title>
+  <link rel="stylesheet" href="usuario.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="l1">S</span>
+      <span class="l2">A</span>
+      <span class="l3">I</span>
+      <span class="l4">C</span>
+      <span class="l5">E</span>
+    </div>
+    <nav class="nav-links">
+      <a href="../proyecto.html">Inicio</a>
+      <a href="../pages/soporte.html">Soporte</a>
+      <a href="../pages/actualizacion.html">Actualizaciones</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="perfil">
+      <div class="perfil-info">
+        <img class="avatar" src="para pagina.jpg">
+        <p><strong>ID:</strong> 10003221678</p>
+        <p><strong>Rol:</strong> Docente</p>
+        <p><strong>Nombre:</strong> Alejandro Martinez Carvajal</p>
+        <p><strong>Correo:</strong> Alejo23@gmail.com</p>
+        <button onclick="location.href='../proyecto.html'" class="btn-cerrar">Cerrar Sesión</button>
+      </div>
+
+      <div class="materiales">
+        <h3>Historial de materiales usados:</h3>
+        <table>
+          <thead>
+            <tr><th>Tipo</th><th>Marca</th><th>Serial</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Laptop</td><td>Lenovo</td><td>A21445</td></tr>
+            <tr><td>Proyector</td><td>Epson</td><td>A2145676</td></tr>
+            <tr><td>Laptop</td><td>Toshiba</td><td>A21445</td></tr>
+            <tr><td>Diadema</td><td>SONY</td><td>A2356</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Material pendiente por devolver:</h4>
+        <ul>
+          <li>28/11/2024 <span class="ok">✔</span></li>
+          <li>15/11/2024 <span class="alerta">⚠</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="historial">
+      <h3>Historial de Solicitud de Materiales</h3>
+      <div class="solicitudes">
+        <p><strong>25/01/2025:<br></strong>Buenas tardes solicito un equipo para el dia de hoy necesito un 1 Proyector, 1 Laptop, para el aula 2C de Informatica Gracias</p><br>
+        <p><strong>10/01/2025:<br></strong>Buenas Tardes Manager de almacen para esta tarde de hoy necesito 2 Laptops, 1 Diadema muchas gracias </p><br>
+        <p><strong>20/12/2024:<br></strong>Buenas tardes Manager de almacen, para hoy necesito 2 Laptops, 1 Diadema Muchas Gracias</p><br>
+        <p><strong>10/11/2024:<br></strong>Buenas Tardes Manager de almacen, para hoy necesito 1 Laptop Muchas Gracias</p><br>
+      </div>
+      <div class="acciones">
+        <button class="btn">Historial de materiales</button>
+        <button class="btn">Enviar una solicitud</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

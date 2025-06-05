@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administrador</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="l1">S</span>
+      <span class="l2">A</span>
+      <span class="l3">I</span>
+      <span class="l4">C</span>
+      <span class="l5">E</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#">Soporte</a>
+      <a href="#">Actualizaciones</a>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <div class="panel-izquierdo">
+      <div class="perfil-box">
+        <img src="admin.jpg" alt="Foto de perfil">
+        <div class="info-line"><strong>ID:</strong> 10054964844</div>
+        <div class="info-line"><strong>Rol:</strong> Administrador</div>
+        <div class="info-line"><strong>Nombre:</strong> Guillermo Perez</div>
+        <div class="info-line"><strong>Email:</strong> Guille@gmail.com</div>
+        <button class="boton-morado">CERRAR SESIÓN</button>
+      </div>
+
+      <div class="usuarios-box">
+        <h3>REGISTRO DE USUARIOS:</h3>
+        <ul>
+          <li>Jorge - ID: 978524136</li>
+          <li>Maria - ID: 1007892546</li>
+          <li>Pepe - ID: 1003874657</li>
+        </ul>
+        <p><strong>Material pendiente para devolver:</strong> <span class="alerta">15/11/2024 ⚠️</span></p>
+      </div>
+    </div>
+
+    <div class="panel-derecho">
+      <div class="reporte-box">
+        <h3>GENERAR REPORTE</h3>
+        <textarea placeholder="Escribe el reporte..."></textarea>
+        <div class="descarga">
+          <button class="boton-morado">DESCARGA</button>
+        </div>
+      </div>
+      <button class="boton-morado">GESTIÓN DE PRÉSTAMOS</button>
+    </div>
+  </div>
+</body>
+</html>
