@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="iniciosesion.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="l1">S</span>
+      <span class="l2">A</span>
+      <span class="l3">I</span>
+      <span class="l4">C</span>
+      <span class="l5">E</span>
+    </div>
+    <nav class="nav-links">
+      <a href="../proyecto.html">Inicio</a>
+      <a href="../pages/soporte.html">Soporte</a>
+      <a href="../pages/actualizacion.html">Actualizaciones</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Inicio de sesión</h2>
+    <p class="small-text">¿No estás registrado?<br>Presiona en inicio</p>
+
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="tu@email.com">
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="******">
+
+      <label for="rol">Selección de ingreso</label>
+      <select id="rol">
+      <option value="">Seleccionar</option>
+      <option value="almacen">Personal de almacén</option>
+      <option value="usuario">Usuario</option>
+      <option value="admin">Administrador</option>
+    </select>
+
+      <script>
+        function redireccionar() {
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const seleccion = document.getElementById("rol").value;
+
+      if (!nombre || !email || !password || !seleccion) {
+        alert("Por favor, completa todos los campos y selecciona un tipo de ingreso.");
+      return;
+      }
+
+      switch (seleccion) {
+        case "almacen":
+        window.location.href = "../pages/operador.html";
+      break;
+      case "usuario":
+        window.location.href = "../pages/pagusu.html";
+        break;
+      case "admin":
+        window.location.href = "../pages/administrador.html";
+        break;
+      default:
+        alert("Por favor, selecciona un tipo de ingreso");
+    }
+  }
+      </script>
+
+      <div class="form-buttons">
+        <button type="button" class="btn-login" onclick="redireccionar()">Iniciar sesión</button>
+        <button type="button" class="btn-create" onclick="window.location.href='http://127.0.0.1:5500/registro/registro.html'">Crear</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

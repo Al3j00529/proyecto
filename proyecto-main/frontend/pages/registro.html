@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - SAICE</title>
+  <link rel="stylesheet" href="registro.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>S</span><span>A</span><span>I</span><span>C</span><span>E</span>
+    </div>
+    <nav>
+      <a href="../proyecto.html">Inicio</a>
+      <a href="../pages/soporte.html">Soporte</a>
+      <a href="../pages/actualizacion.html">Actualizaciones</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Registro</h2>
+      <p class="subtext">¿Ya tienes cuenta? <a href="../pages/iniciosesion.html">Inicia sesión</a></p>
+      <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre" required />
+        
+        <label>Apellido</label>
+        <input type="text" placeholder="Tu apellido" required />
+        
+        <label>Edad</label>
+        <input type="number" placeholder="Tu edad" required />
+
+        <label>Teléfono</label>
+        <input type="tel" placeholder="Tu teléfono" required />
+
+        <label>Email</label>
+        <input type="email" placeholder="Correo" required />
+
+        <label>Contraseña</label>
+        <input type="password" placeholder="*******" required />
+
+        <label>Confirmar contraseña</label>
+        <input type="password" placeholder="*******" required />
+
+        <label for="rol">Selección tipo de usuario</label>
+        <select id="rol" name="rol">
+          <option value="">Seleccionar</option>
+          <option value="almacen">Personal de almacén</option>
+          <option value="usuario">Usuario</option>
+          <option value="admin">Administrador</option>
+        </select>
+
+        <button type="submit" class="register-btn" onclick="window.location.href='../pages/creat.html'">Crear cuenta</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

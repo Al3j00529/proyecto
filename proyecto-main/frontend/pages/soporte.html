@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAICE</title>
+    <link rel="stylesheet" href="soporte.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+          <span class="l1">S</span>
+          <span class="l2">A</span>
+          <span class="l3">I</span>
+          <span class="l4">C</span>
+          <span class="l5">E</span>
+        </div>
+        <nav class="nav-links">
+          <a href="../proyecto.html">Inicio</a>
+          <a href="../pages/soporte.html">Soporte</a>
+          <a href="../pages/actualizacion.html">Actualizaciones</a>
+        </nav>
+      </header>
+      <div class="contacto">
+        <label for="Telefono">Telefono: #123456789</label>
+    
+        <label for="email">Correo electrónico: saice@example.com</label>
+    
+        <label for="mensaje">Envianos tu mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    
+        <button type="button" id="btnEnviar">Enviar</button>
+    
+        <div class="mensaje-exito" id="mensajeExito">✅ Su mensaje fue enviado con éxito</div>
+      </div>
+    
+      <script>
+        document.getElementById("btnEnviar").addEventListener("click", function() {
+          document.getElementById("mensajeExito").style.display = "block";
+        });
+      </script>
+</body>
+</html>
