@@ -4,7 +4,7 @@ export const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: 'sena',
-    database: 'mi_app',
+    database: 'saice',
     port: '3307',
     waitForConnections: true,
     connectionLimit: 10,
