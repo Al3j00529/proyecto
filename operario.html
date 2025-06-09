@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operario de Almacén</title>
+    <link rel="stylesheet" href="../css/operario.css">
+</head>
+<body>
+    <div class="navbar">
+  <div class="logo">
+    <span class="l1">S</span>
+    <span class="l2">A</span>
+    <span class="l3">I</span>
+    <span class="l4">C</span>
+    <span class="l5">E</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="#">Inventario</a>
+    <a href="#">Recepción</a>
+    <a href="#">Salida</a>
+    <a href="#">Reportes</a>
+    <a href="#">Soporte</a>
+  </div>
+
+  <div class="profile">
+    <img src="para pagina.jpg" alt="Perfil" class="profile-icon">
+  </div>
+</div>
+    <div class="top-bar">
+        <div class="search-bar">
+            <button>Buscar</button>
+            <input type="text" placeholder="Buscar producto o ID">
+        </div>
+        <div class="profile-icon" title="Perfil"></div>
+    </div>
+
+    <div class="contenedor">
+        <aside class="sidebar">
+            <h2>Acciones rápidas</h2>
+            <div class="busqueda">
+                <label>Buscar producto</label>
+                <div class="input-group">
+                    <button>Buscar</button>
+                    <input type="text" placeholder="Ej: Caja de guantes">
+                </div>
+            </div>
+
+            <div class="busqueda">
+                <label>Registrar entrada</label>
+                <div class="input-group">
+                    <button>Registrar</button>
+                    <input type="text" placeholder="ID del producto">
+                </div>
+            </div>
+
+            <div class="busqueda">
+                <label>Registrar salida</label>
+                <div class="input-group">
+                    <button>Registrar</button>
+                    <input type="text" placeholder="ID del producto">
+                </div>
+            </div>
+
+            <div class="busqueda">
+                <label>Generar reporte</label>
+                <div class="input-group">
+                    <button>Generar</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="tabla-container">
+            <h2>Productos en Almacén</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>ID</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Libros</td><td>Biblioteca</td><td>000123456</td><td>23</td></tr>
+                    <tr><td>Batas</td><td>Laboratorio</td><td>000123457</td><td>5</td></tr>
+                    <tr><td>PC</td><td>Equipos</td><td>000123458</td><td>4</td></tr>
+                    <tr><td>Balones</td><td>Deportes</td><td>000123459</td><td>5</td></tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
